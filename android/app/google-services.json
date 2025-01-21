@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "605901077736",
+    "project_id": "reminder-app-744b5",
+    "storage_bucket": "reminder-app-744b5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605901077736:android:b80c7b2be745ebb8be9d5d",
+        "android_client_info": {
+          "package_name": "com.example.reminder_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6OQrS6iXwDkRRoDsnbDFvIg2_rK_fk6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
