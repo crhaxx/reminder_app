@@ -21,7 +21,7 @@ class NotificationLogic {
 
   static Future init(BuildContext context, String uid) async {
     tz.initializeTimeZones();
-    final android = AndroidInitializationSettings("image");
+    final android = AndroidInitializationSettings("mynotes");
     final settings = InitializationSettings(android: android);
     await _notifications.initialize(settings,
         onDidReceiveNotificationResponse: (payload) {
@@ -51,6 +51,6 @@ class NotificationLogic {
         uiLocalNotificationDateInterpretation:
             UILocalNotificationDateInterpretation.absoluteTime,
         matchDateTimeComponents: DateTimeComponents.time,
-        androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle);
+        androidScheduleMode: AndroidScheduleMode.alarmClock);
   }
 }

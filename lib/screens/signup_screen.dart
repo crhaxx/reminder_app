@@ -89,7 +89,7 @@ class _SignUpState extends State<SignUpScreen> {
                 RoundTextField(
                   textEditingController: _firstNameController,
                   hintText: "First Name",
-                  icon: "assets/images/image.jpg",
+                  icon: "assets/images/mynotes.png",
                   textInputType: TextInputType.name,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -104,7 +104,7 @@ class _SignUpState extends State<SignUpScreen> {
                 RoundTextField(
                   textEditingController: _lastNameController,
                   hintText: "Last name",
-                  icon: "assets/images/image.jpg",
+                  icon: "assets/images/mynotes.png",
                   textInputType: TextInputType.name,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -119,7 +119,7 @@ class _SignUpState extends State<SignUpScreen> {
                 RoundTextField(
                   textEditingController: _emailController,
                   hintText: "Email",
-                  icon: "assets/images/image.jpg",
+                  icon: "assets/images/mynotes.png",
                   textInputType: TextInputType.emailAddress,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -134,7 +134,7 @@ class _SignUpState extends State<SignUpScreen> {
                 RoundTextField(
                   textEditingController: _passController,
                   hintText: "Password",
-                  icon: "assets/images/image.jpg",
+                  icon: "assets/images/mynotes.png",
                   textInputType: TextInputType.text,
                   isObsecureText: isObscure,
                   validator: (value) {
@@ -157,8 +157,8 @@ class _SignUpState extends State<SignUpScreen> {
                       width: 20,
                       child: Image.asset(
                         isObscure
-                            ? "assets/images/image.jpg"
-                            : "assets/images/image.jpg",
+                            ? "assets/images/mynotes.png"
+                            : "assets/images/mynotes.png",
                         width: 20,
                         height: 20,
                         fit: BoxFit.contain,
@@ -279,7 +279,7 @@ class _SignUpState extends State<SignUpScreen> {
                           border: Border.all(color: AppColors.whiteColor),
                         ),
                         child: Image.asset(
-                          "assets/images/image.jpg",
+                          "assets/images/mynotes.png",
                           height: 20,
                           width: 20,
                         ),
@@ -300,7 +300,7 @@ class _SignUpState extends State<SignUpScreen> {
                           border: Border.all(color: AppColors.whiteColor),
                         ),
                         child: Image.asset(
-                          "assets/images/image.jpg",
+                          "assets/images/mynotes.png",
                           height: 20,
                           width: 20,
                         ),

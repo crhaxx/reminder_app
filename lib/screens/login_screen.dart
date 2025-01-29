@@ -105,7 +105,7 @@ class _LoginState extends State<LoginScreen> {
                 RoundTextField(
                   textEditingController: _emailController,
                   hintText: "Email",
-                  icon: "assets/images/image.jpg",
+                  icon: "assets/images/mynotes.png",
                   textInputType: TextInputType.emailAddress,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -120,7 +120,7 @@ class _LoginState extends State<LoginScreen> {
                 RoundTextField(
                   textEditingController: _passController,
                   hintText: "Password",
-                  icon: "assets/images/image.jpg",
+                  icon: "assets/images/mynotes.png",
                   textInputType: TextInputType.text,
                   isObsecureText: isObscure,
                   validator: (value) {
@@ -143,8 +143,8 @@ class _LoginState extends State<LoginScreen> {
                       width: 20,
                       child: Image.asset(
                         isObscure
-                            ? "assets/images/image.jpg"
-                            : "assets/images/image.jpg",
+                            ? "assets/images/mynotes.png"
+                            : "assets/images/mynotes.png",
                         width: 20,
                         height: 20,
                         fit: BoxFit.contain,
@@ -226,7 +226,7 @@ class _LoginState extends State<LoginScreen> {
                           border: Border.all(color: AppColors.whiteColor),
                         ),
                         child: Image.asset(
-                          "assets/images/image.jpg",
+                          "assets/images/mynotes.png",
                           height: 20,
                           width: 20,
                         ),
@@ -247,7 +247,7 @@ class _LoginState extends State<LoginScreen> {
                           border: Border.all(color: AppColors.whiteColor),
                         ),
                         child: Image.asset(
-                          "assets/images/image.jpg",
+                          "assets/images/mynotes.png",
                           height: 20,
                           width: 20,
                         ),
