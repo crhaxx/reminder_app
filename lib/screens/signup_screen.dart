@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:reminder_app/screens/home_screen.dart';
+import 'package:reminder_app/screens/login_screen.dart';
 import 'package:reminder_app/utils/app_colors.dart';
 import 'package:reminder_app/widgets/round_gradient_button.dart';
 import 'package:reminder_app/widgets/round_text_field.dart';
@@ -213,7 +214,20 @@ class _SignUpState extends State<SignUpScreen> {
                             'firstname': _firstNameController.text,
                             'lastname': _lastNameController.text,
                           });
-                        } catch (e) {}
+
+                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                            content: Text("Account Created"),
+                          ));
+
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => LoginScreen()));
+                        } catch (e) {
+                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                            content: Text(e.toString()),
+                          ));
+                        }
                       }
                     }
                   },
@@ -298,7 +312,12 @@ class _SignUpState extends State<SignUpScreen> {
                   height: media.width * 0.05,
                 ),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => LoginScreen()));
+                    },
                     child: RichText(
                       text: TextSpan(
                         style: TextStyle(
@@ -307,9 +326,9 @@ class _SignUpState extends State<SignUpScreen> {
                           fontWeight: FontWeight.w400,
                         ),
                         children: [
-                          TextSpan(text: "Don't have an account?  "),
+                          TextSpan(text: "Already have an account?  "),
                           TextSpan(
-                            text: "Register",
+                            text: "Login",
                             style: TextStyle(
                               color: AppColors.secondaryColor1,
                               fontSize: 14,

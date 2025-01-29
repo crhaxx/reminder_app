@@ -29,6 +29,10 @@ class _LoginState extends State<LoginScreen> {
 
       User? user = userCredential.user;
 
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text("Logged in successfully")),
+      );
+
       Navigator.push(
           context, MaterialPageRoute(builder: (context) => HomeScreen()));
       return user;
